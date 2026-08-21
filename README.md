@@ -3,9 +3,13 @@
 Algunos ejercicios resueltos.
 
 - [00-cajero](/00-cajero) lo hicimos con cuarto segunda el 21/08.
-
+- [01-reloj](/01-reloj) un ejemplo que usé el 21/08 con cuarto primera para demostrar *callbacks* y objetos.
 
 ## Prueba del 4/9
+
+La idea de la próxima prueba de JS es evaluar comprensión del lenguaje pero no de la API del DOM.
+No entran todas las funciones y propiedades que se usan para modificar un documento HTML del lado
+del cliente (navegador).
 
 Los temas de la prueba son:
 
@@ -16,4 +20,6 @@ Los temas de la prueba son:
 - objetos
 - funciones, expresiones de funcion, funciones flechas
 - *callbacks*, `setInterval` y `setTimeout`
+- objeto Date para datos temporales
 
+Queda **afuera** de la prueba explícitamente: *arrays*, JSON, `for in` y `for of`, `fetch()`.
