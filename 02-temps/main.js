@@ -8,7 +8,8 @@
 let answer = prompt('que haces usuario, dame una temperatura con unidad como "88 C" o "67 K"');
 // split permite partir un string en varios usando un "delimitador"
 // aca el delimitador es el espacio y el resultado de split es un array con dos elementos
-// primer elemento
+// primer elemento es la temperatura, lo convertimos a numero
+// segundo elemento es la unidad, lo dejamos como String
 let unit = answer.split(' ')[1];
 let T = +answer.split(' ')[0];
 // ver que unidad ingresaron, hacer las cuentas y mostrar el resultado en un alert
