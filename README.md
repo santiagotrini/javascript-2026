@@ -6,6 +6,19 @@ Algunos ejercicios resueltos.
 - [01-reloj](/01-reloj) un ejemplo que usé el 21/08 con cuarto primera para demostrar *callbacks* y objetos.
 - [02-temps](/02-temps) un ejercicio que hizo cuarto segunda el 25/08 para practicar lo que ya vieron.
 
+### Fórmulas para el ejercicio de temperaturas
+
+```math
+\begin{align*}
+T_F &= \frac{9}{5} T_C + 32 \\
+T_K &= T_C + 273.15 \\
+T_C &= T_K - 273.15 \\
+T_F &= \frac{9}{5}(T_K - 273.15) + 32 \\
+T_C &= \frac{5}{9}(T_F - 32) \\
+T_K &= \frac{5}{9}(T_F - 32) + 273.15
+\end{align*}
+```
+
 ## Prueba del 4/9
 
 La idea de la próxima prueba de JS es evaluar comprensión del lenguaje pero no de la API del DOM.
