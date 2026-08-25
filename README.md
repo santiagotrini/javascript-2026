@@ -5,6 +5,7 @@ Algunos ejercicios resueltos.
 - [00-cajero](/00-cajero) lo hicimos con cuarto segunda el 21/08.
 - [01-reloj](/01-reloj) un ejemplo que usé el 21/08 con cuarto primera para demostrar *callbacks* y objetos.
 - [02-temps](/02-temps) un ejercicio que hizo cuarto segunda el 25/08 para practicar lo que ya vieron.
+- [03-romanos](/03-romanos) un ejercicio que hizo cuarto primera el 25/08 para practicar lo que ya vieron porque son re capos y lo sacaron solos.
 
 ### Fórmulas para el ejercicio de temperaturas
 
