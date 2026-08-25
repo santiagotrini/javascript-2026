@@ -7,6 +7,8 @@ Algunos ejercicios resueltos.
 - [02-temps](/02-temps) un ejercicio que hizo cuarto segunda el 25/08 para practicar lo que ya vieron.
 - [03-romanos](/03-romanos) un ejercicio que hizo cuarto primera el 25/08 para practicar lo que ya vieron porque son re capos y lo sacaron solos.
 
+![por que es importante](romanos.gif)
+
 ### Fórmulas para el ejercicio de temperaturas
 
 ```math
