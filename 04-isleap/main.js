@@ -9,13 +9,18 @@
 // opcion de volver a comenzar
 
 
+
 function isLeap(year) {
-  // tu codigo acá
+  let r = year % 4 == 0 && year % 100 != 0;
+  r     = r || year % 400 == 0;
+  return r; 
 }
 
 function main() {
-  // la logica principal del programa
-  // completar...
+  do {
+    let year = +prompt('ingrese un año');
+    alert(`el año ${year} ${isLeap(year) ? 'es' : 'no es'} bisiesto`);
+  } while (confirm('otro?'));
 }
 
 main();
