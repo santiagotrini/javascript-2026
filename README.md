@@ -11,6 +11,7 @@ Algunos ejercicios resueltos.
 
 - [04-isleap](/04-isleap) practicando condiciones con cuarto segunda el 28/08.
 - [05-trivia](/05-trivia) practicando condiciones y objetos con cuarto segunda el 01/09.
+- [06-timer](/06-timer) practicando callbacks con cuarto primera el 01/09.
 
 ### Fórmulas para el ejercicio de temperaturas
 
