@@ -1,0 +1,15 @@
+body {
+  background-color: #a81a0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #fefffa;
+  font-family: "Anton";
+  font-size: 4em;
+  width: 70%;
+  text-align: center;
+}
