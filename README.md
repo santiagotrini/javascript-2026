@@ -13,6 +13,7 @@ Algunos ejercicios resueltos.
 - [05-trivia](/05-trivia) practicando condiciones y objetos con cuarto segunda el 01/09.
 - [06-timer](/06-timer) practicando callbacks con cuarto primera el 01/09.
 - [07-primavera](/07-primavera) practicando Date y timers con cuarto primera el 03/09.
+- [08-ruleta](/08-ruleta) practicando Math.random(), condicionales y loops con cuarto primera el 03/09.
 
 ### Fórmulas para el ejercicio de temperaturas
 
