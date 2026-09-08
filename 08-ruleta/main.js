@@ -16,3 +16,12 @@
 // despues de cada ronda preguntar si desea seguir, y si no informar con cuanto se retiro
 
 // acá va tu solución
+let cash = 50000;
+do {
+  let input = prompt('decime tu jugada');
+  let bet = {
+    type: input.split(' ')[0],
+    amount: input.split(' ')[1]
+  };
+  console.log(bet.type, bet.amount);
+} while (confirm('una jugada mas?'));
