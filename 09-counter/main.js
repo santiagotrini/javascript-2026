@@ -6,5 +6,16 @@
 // en ese handler conviene usar la propiedad textContent de element
 
 function handleClick(event) {
-  // implementacion aca 
+  let n = +event.target.textContent; // event.target es el elemento button
+                                     // con element.textContent tenes el texto del elemento
+  n++;
+  event.target.textContent = n;
 }
+
+// en general event.target es el elemento que genero el evento
+// en el caso de un evento click como el de este ejemplo siempre event.target es el 
+// elemento HTML que clickeo el usuario, podemos hacer esto mas explicito escribiendo:
+// let button = event.target;
+// let n = +button.textContent;
+// n++;
+// button.textContent = n;
