@@ -22,9 +22,9 @@ let div            = document.querySelector('.board');
 // la logica del juego cuando clickea cada jugador
 function handleClick(e) {
   // renombrando variables para que se entienda mejor
-  let btn = e.target;
-  let i   = e.target.dataset.index;
-  let move        = xMoves ? 'X' : 'O';
+  let btn  = e.target;
+  let i    = e.target.dataset.index;
+  let move = xMoves ? 'X' : 'O';
   // caso de que hay fichas para poner
   if (remainingMoves > 0) {
     if (btn.textContent != '') return;

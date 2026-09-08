@@ -15,6 +15,7 @@ Algunos ejercicios resueltos.
 - [07-primavera](/07-primavera) practicando Date y timers con cuarto primera el 03/09.
 - [08-ruleta](/08-ruleta) practicando Math.random(), condicionales y loops con cuarto primera el 03/09.
 - [09-counter](/09-counter) hoy 08/09 empezamos a ver eventos y API del DOM con cuarto segunda. 
+- [10-tateti](/10-tateti) hoy 08/09 con cuarto primera hicimos esto. Usa lo mismo que el anterior (el contador) pero agrega algunas cosas nuevas: `document.querySelector()`, *arrays*, *data attributes* y `element.onclick`.
 
 ### Fórmulas para el ejercicio de temperaturas
 
