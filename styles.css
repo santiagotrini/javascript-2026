@@ -12,6 +12,6 @@ ul {
   list-style: none;
 }
 
-a i {
+a:visited i, a:link i {
   color: black;
 }
