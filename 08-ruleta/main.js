@@ -18,10 +18,30 @@
 // acá va tu solución
 let cash = 50000;
 do {
-  let input = prompt('decime tu jugada');
+  let input = prompt(`decime tu jugada, te quedan \$${cash.toFixed(2)}`);
   let bet = {
     type: input.split(' ')[0],
     amount: input.split(' ')[1]
   };
-  console.log(bet.type, bet.amount);
+  if (bet.amount > cash) {
+    alert('no te alcanza hermano!');
+    continue;
+  }
+  cash -= bet.amount;
+  let rn = Math.floor(Math.random() * 37); // random en [0,36]
+  let color = 'red';
+  if ((rn % 2 == 1) && (rn >= 11 && rn <= 18) || (rn >= 29) && (rn <= 36)) color = 'black';
+  if ((rn % 2 == 0) && (rn >= 1  && rn <= 10) || (rn >= 19) && (rn <= 28)) color = 'black';
+  if (bet.type == 'PAR'   && rn % 2 == 0) cash += bet.amount*2; 
+  if (bet.type == 'IMPAR' && rn % 2 == 1) cash += bet.amount*2; 
+  if (bet.type == 'PASA'  && rn > 18)     cash += bet.amount*2; 
+  if (bet.type == 'FALTA' && rn > 0 && rn < 19)   cash += bet.amount*2; 
+  if (bet.type == 'NEGRO' && color == 'black')    cash += bet.amount*2; 
+  if (bet.type == 'ROJO'  && color == 'red')      cash += bet.amount*2; 
+  if (isFinite(bet.type)  && rn    == +bet.type)  cash += bet.amount * 36;
+  // falta chequear las demas jugadas: docenas, columnas
+  if (cash <= 0) {
+    alert('no tenes mas plata, a casa!');
+    break;
+  } 
 } while (confirm('una jugada mas?'));
