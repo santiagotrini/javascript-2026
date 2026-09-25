@@ -7,6 +7,14 @@ body {
   font-family: sans-serif;
 }
 
+h1, h2 { margin: 10px; }
+
+form { margin-top: 10px; }
+
+img { width: 150px; }
+
+h3 { font-family: monospace; }
+
 h2 {
   font-size: 3em;
 }

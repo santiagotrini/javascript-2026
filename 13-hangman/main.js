@@ -1,5 +1,6 @@
 // el juego del ahorcado
 // necesitamos un string para adivinar
+let lives = 6; // cantidad de vidas
 let dictionary = []; // corchetes vacios es el array
                      // vacio en JS
 dictionary[0] = 'aveztruz'; // usamos subindices 
@@ -55,16 +56,17 @@ for (let i = 0; i < guess.length; i++)
 
 function handleSubmit(event) {
   event.preventDefault(); // evita la redireccion de la pagina
+  if (lives <= 0) return;
   let form = event.target; // event.target siempre es el elemento
                            // que genera el evento
   console.log(form.letter.value); // lo que el tipo escribio
                                   // accedemos a cada input de un form
                                   // por el nombre
   
-                                  
+  if (form.letter.value == '') return; // si no ingresan nada no hacemos nada                                
   let l = form.letter.value[0];
   console.log(form.letter);   
-  
+   
   // loopeamos la palabra correcta
   // podriamos hacer esto
   // chequeamos si lo que el jugador ingresa esta en word
@@ -76,16 +78,23 @@ function handleSubmit(event) {
     } 
   }
 
-  if (!letterFound)
-    lettersNotInWord.push(l);
+  if (!letterFound) {
+    lettersNotInWord.push(l); // esa letra no va
+    lives--; // pierde una vida
+  }
 
   console.log(lettersNotInWord);
+  // actualizamos el dibujo
+  let img = document.querySelector('img');
+  img.src = `./img/${lives}.png`;
   // actualizamos el h2 con lo nuevo que haya en guess
   let h2 = document.querySelector('h2');
   h2.textContent = '';
   for (let i = 0; i < guess.length; i++)
       h2.textContent += `${guess[i]} `;
-
+  // actualizamos el h3 con la lista de letras que no estan
+  let h3 = document.querySelector('h3');
+  h3.textContent = JSON.stringify(lettersNotInWord);
 
   event.target.reset(); // blanquea el form
 }
