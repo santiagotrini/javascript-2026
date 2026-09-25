@@ -17,6 +17,8 @@ Algunos ejercicios resueltos.
 - [09-counter](/09-counter) hoy 08/09 empezamos a ver eventos y API del DOM con cuarto segunda. 
 - [10-tateti](/10-tateti) hoy 08/09 con cuarto primera hicimos esto. Usa lo mismo que el anterior (el contador) pero agrega algunas cosas nuevas: `document.querySelector()`, *arrays*, *data attributes* y `element.onclick`.
 - [11-rps](/11-rps) hoy 15/09 usamos lo que ya sabemos para jugar al Piedra, Papel o Tijera contra la CPU. Usamos botones, `onclick`, `textContent` y `Math.random()` para jugar contra la máquina y lllevar la cuenta de partidas ganadas por cada uno. 
+- [12-infinite-scroll](/12-infinite-scroll) hoy 25/09 subo este ejemplo para que vean un evento que no sea *click* o *submit*.
+- [13-hangman](/13-hangman) subo lo que tengo del ahorcado. Puede ser que esté incompleto, fijense si encuentran bugs y arreglenlos.
 
 ### Fórmulas para el ejercicio de temperaturas
 
